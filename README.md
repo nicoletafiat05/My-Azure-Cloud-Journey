@@ -1,4 +1,4 @@
-#Azure Cloud Fundamentals
+## Azure Cloud Fundamentals
 
 This repository documents my technical journey through the Microsoft Azure ecosystem. Through a series of hands-on labs, I have gained practical experience in deploying, managing, and automating cloud resources—transitioning from IaaS to PaaS, Containers, and Serverless architectures.
 
@@ -99,6 +99,46 @@ This is the "Google Drive" for developers. Companies use Blob Storage to store m
 This is the heart of almost every app (like an online shop or a banking app). Instead of maintaining a physical server with SQL Server installed, you use Azure SQL to store user accounts, orders, and products safely and with 99.99% availability.
 
 <img width="1470" height="956" alt="lab 7-testarea bazei de date" src="https://github.com/user-attachments/assets/7a2f0d3f-eccc-45aa-bb94-d27c37a346b8" />
+
+## Lab 8: IoT Connectivity with Azure IoT Hub
+
+**Tehnical Action:** I deployed an **Azure IoT Hub** and connected a simulated **Raspberry Pi** device to it. I used an online simulator real-time sensor data (temperature and humidity) to the cloud. I then monitored the message telemetry and device connectivity directly from the IoT Hub dashboard in the Azure Portal.
+
+**What I Learned:**
+* **IoT Telemetry:** I understood how physical devices (or simulators) send data packets to the cloud for processing.
+* **Device Identity:** I learned how to authenticate a specific device to a Hub using connection strings.
+* **Real-time Monitoring:** I practiced analyzing "Device-to-Cloud" messages and observed how metrics change in the portal as the device sends data.
+
+**Real-World Context:**
+This is the foundation of "Smart" everything—from smart factories to home automation. Imagine thousands of sensors in a warehouse sending temperature data to Azure; IoT Hub is the "gateway" that collects all that data securely so you can take action if a room gets too hot.
+
+
+<img width="1470" height="956" alt="lab 8-sarcina 3" src="https://github.com/user-attachments/assets/600fedfb-5655-41f6-a81b-d18e4ac25e2e" />
+
+## Lab 9: Infrastructure Automation with ARM Templates
+
+**Technical Action:** In the final lab, I shifted from manual resource creation to **Infrastructure as Code (IaC)**. I used an **Azure QuickStart Template** to deploy a Windows Virtual Machine automatically. I explored the GitHub library of ARM (Azure Resource Manager) templates and deployed a standardized environment directly through the Azure Portal.
+
+**What I Learned:**
+* **Automation (IaC):** I understood that templates eliminate human error and ensure consistency. If I need 100 identical servers, I can use a template instead of repeating the manual steps 100 times.
+* **JSON Structure:** I learned that Azure resources can be defined in JSON files, allowing infrastructure to be versioned and managed like software code.
+* **Deployment Monitoring:** I practiced monitoring the deployment progress and verified the successful creation of resources through the **Activity Log**.
+
+**Real-World Context:**
+In a professional DevOps environment, nobody clicks buttons in the portal to create servers. Instead, engineers use templates (ARM or Bicep). This lab showed me how companies can "re-create" their entire data center in minutes if something goes wrong, simply by running a script.
+
+
+<img width="1470" height="956" alt="lab 9-sarcina 1" src="https://github.com/user-attachments/assets/b5e34849-8666-4962-b515-5cc36c0ba207" />
+
+## Final Skills Acquired
+* **Cloud Infrastructure (IaaS):** Virtual Machines, Networking (VNET/NSG).
+* **Modern Hosting (PaaS & Containers):** Azure App Service, Docker, ACI.
+* **Serverless Computing:** Azure Functions.
+* **Data Management:** Azure Storage, Blob containers.
+* **IoT & Monitoring:** IoT Hub, Azure Monitor, Insights.
+* **Automation:** ARM Templates (IaC).
+
+
 
 
 
